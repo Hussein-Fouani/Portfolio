@@ -31,28 +31,34 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Senior Project LIU Community Portal 🎉",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Portal Created to Connect LIU Community.It is a full-stack application that allows users to create an account, login, and post to the community board. The community board is a place where users can post about events, jobs, and other opportunities. The application also allows users to search for other users and view their profiles.",
+    url: "https://github.com/Hussein-Fouani/Senior_Project_LIU_Community",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Blog App Rest-API 🎉",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "A dynamic Blog Application API  using the Spring framework. It encompasses a wide array of concepts and tools, including Spring Boot, Spring Security, JWT, Spring Data JPA (Hibernate), and MySQL database.",
+    url: "https://github.com/Hussein-Fouani/springboot-blog-rest-api",
   },
   {
-    title: "My Resume Site",
+    title: "Runner Group Project 🎉",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "This is a CRUD (Create, Read, Update, Delete) web application built using Spring Boot and Thymeleaf. It allows users to manage a list of runners and events along with their associated details.",
+    url: "https://github.com/Hussein-Fouani/Running_Application",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Chat Application With Spring  🎉",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Real-Time Web Applications with WebSockets Project! This Project aims to provide  a clear understanding of WebSockets and their crucial role in enabling real-time communication in web applications.",
+    url: "https://github.com/Hussein-Fouani/Chat_Application",
+  },
+  {
+    title: "Video Call App 🎉",
+    description:
+      "Video call application that allow you to Connect, collaborate, and enjoy seamless video calls with ease. Includes in-app chat and screen sharing features for enhanced communication. ",
+    url: "https://github.com/Hussein-Fouani/Video_Call_App",
   },
 ];
 
