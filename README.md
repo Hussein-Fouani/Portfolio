@@ -23,4 +23,3 @@ npm install
 npm run deploy  # pushes the site folder to gh-pages
 ```
 
-> The `src/` folder contains the previous React version of the site and is no longer used.
