@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hussein Fouani · .NET Backend Developer</title>
+<meta name="description" content="Hussein Fouani: .NET backend developer in Beirut building hospital information systems with C#, ASP.NET Core and SQL Server, expanding into AI and machine learning engineering.">
+<meta name="author" content="Hussein Fouani">
+<meta name="theme-color" content="#0b1226">
+<link rel="canonical" href="https://hussein-fouani.github.io/Portfolio/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Hussein Fouani · .NET Backend Developer">
+<meta property="og:description" content="C#, ASP.NET Core, SQL Server and REST APIs. Building hospital information systems at Synapse; expanding into AI/ML engineering.">
+<meta property="og:url" content="https://hussein-fouani.github.io/Portfolio/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1226'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='%2340c8e0' text-anchor='middle'%3EHF%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Hussein Fouani","jobTitle":".NET Backend Developer","worksFor":{"@type":"Organization","name":"Synapse"},"address":{"@type":"PostalAddress","addressLocality":"Beirut","addressCountry":"LB"},"alumniOf":"Lebanese International University","url":"https://hussein-fouani.github.io/Portfolio/","sameAs":["https://www.linkedin.com/in/hussein-fouani","https://github.com/Hussein-Fouani"]}
+</script>
+<script>
+  (function(){document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}})();
+</script>
+<style>
+:root{
+  --bg:#f6f8fb; --surface:#ffffff; --surface-2:#eef2f7; --text:#0f172a; --muted:#475569;
+  --border:#dbe2ec; --accent:#0e7490; --accent-strong:#0b5d74; --accent-soft:#e0f4f8;
+  --hero-1:#0b1226; --hero-2:#16335f; --hero-text:#ffffff; --hero-muted:#c8d6eb; --hero-accent:#40c8e0;
+  --shadow:0 1px 2px rgba(15,23,42,.06),0 4px 16px rgba(15,23,42,.06);
+  --radius:14px; --max:1080px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a0f1e; --surface:#111a30; --surface-2:#16213b; --text:#e6ecf5; --muted:#9fb0c8;
+    --border:#22304d; --accent:#40c8e0; --accent-strong:#7dd9ea; --accent-soft:#12324a;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a0f1e; --surface:#111a30; --surface-2:#16213b; --text:#e6ecf5; --muted:#9fb0c8;
+  --border:#22304d; --accent:#40c8e0; --accent-strong:#7dd9ea; --accent-soft:#12324a;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 20px rgba(0,0,0,.25);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--hero-accent);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--surface);color:var(--text);padding:8px 14px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+
+/* Header */
+header.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--hero-1) 92%,transparent);backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-weight:700;letter-spacing:.2px}
+.brand:hover{text-decoration:none}
+.mono{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:#14254a;color:var(--hero-accent);font-size:14px;font-weight:800;border:1px solid rgba(64,200,224,.35)}
+.nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0}
+.nav ul a{display:block;color:#cfdbee;padding:8px 12px;border-radius:8px;font-size:15px}
+.nav ul a:hover,.nav ul a.active{color:#fff;background:rgba(255,255,255,.08);text-decoration:none}
+.nav-actions{display:flex;align-items:center;gap:6px}
+.icon-btn{display:grid;place-items:center;width:38px;height:38px;border-radius:9px;border:1px solid rgba(255,255,255,.14);background:transparent;color:#e6ecf5;cursor:pointer}
+.icon-btn:hover{background:rgba(255,255,255,.08)}
+.icon-btn svg{width:18px;height:18px}
+.menu-btn{display:none}
+@media (max-width:760px){
+  .menu-btn{display:grid}
+  .nav ul{position:absolute;top:60px;left:0;right:0;flex-direction:column;gap:0;padding:8px 12px 14px;background:var(--hero-1);border-bottom:1px solid rgba(255,255,255,.08);display:none}
+  .nav ul.open{display:flex}
+  .nav ul a{padding:12px}
+}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--hero-1) 0%,var(--hero-2) 100%);color:var(--hero-text);position:relative;overflow:hidden}
+.hero .wrap{position:relative;padding:88px 20px 96px;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--hero-muted);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);padding:6px 12px;border-radius:999px}
+.dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 3px rgba(52,211,153,.2)}
+.hero h1{font-size:clamp(2.3rem,5vw,3.6rem);line-height:1.1;margin:18px 0 10px;letter-spacing:-.5px}
+.hero .role{font-size:clamp(1.15rem,2.4vw,1.45rem);color:var(--hero-accent);font-weight:600;margin:0 0 16px}
+.hero p.lead{font-size:1.08rem;color:var(--hero-muted);max-width:56ch;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:10px;font-weight:600;font-size:15px;border:1px solid transparent}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:var(--hero-accent);color:#062033}
+.btn-primary:hover{background:#6ad6ea}
+.btn-ghost{color:#fff;border-color:rgba(255,255,255,.22)}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+.hero-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:22px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13.5px;color:#cfdbee;line-height:1.75}
+.hero-card .k{color:#7dd3fc}.hero-card .s{color:#a7f3d0}.hero-card .c{color:#7b8db0}
+.net{position:absolute;right:-60px;top:-40px;width:520px;opacity:.35;pointer-events:none}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding:64px 20px 72px}.hero-card{display:none}.net{opacity:.18}}
+
+/* Sections */
+section.block{padding:80px 0}
+section.alt{background:var(--surface-2)}
+.sec-head{margin-bottom:32px}
+.sec-head .kicker{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:1.4px;text-transform:uppercase}
+.sec-head h2{font-size:clamp(1.6rem,3vw,2.1rem);margin:6px 0 0;letter-spacing:-.3px}
+.sec-head p{color:var(--muted);margin:8px 0 0;max-width:62ch}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:28px;align-items:start}
+.about-grid p{margin:0 0 14px;color:var(--text)}
+.facts{padding:22px;display:grid;gap:14px}
+.fact{display:flex;gap:12px;align-items:flex-start}
+.fact svg{flex:none;width:20px;height:20px;color:var(--accent);margin-top:3px}
+.fact b{display:block;font-size:14px}
+.fact span{color:var(--muted);font-size:14px}
+@media (max-width:760px){.about-grid{grid-template-columns:1fr}}
+
+/* Timeline */
+.timeline{display:grid;gap:18px}
+.tl{padding:24px;display:grid;grid-template-columns:auto 1fr;gap:18px}
+.tl-logo{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--accent-soft);color:var(--accent);font-weight:800}
+.tl h3{margin:0;font-size:1.15rem}
+.tl .meta{color:var(--muted);font-size:14.5px;margin:2px 0 12px}
+.tl ul{margin:0;padding-left:18px}
+.tl li{margin:4px 0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;padding:0;list-style:none}
+.tag{font-size:13px;padding:4px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent-strong);border:1px solid color-mix(in srgb,var(--accent) 25%,transparent);font-weight:600}
+@media (max-width:560px){.tl{grid-template-columns:1fr}.tl-logo{display:none}}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.skill{padding:22px}
+.skill h3{margin:0 0 4px;font-size:1.05rem;display:flex;align-items:center;gap:8px}
+.skill h3 svg{width:20px;height:20px;color:var(--accent)}
+.skill p{color:var(--muted);font-size:14px;margin:0 0 14px}
+.skill .tags{margin-top:0}
+.tag.learning{background:transparent;border-style:dashed;color:var(--muted)}
+@media (max-width:900px){.skills{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.skills{grid-template-columns:1fr}}
+
+/* Projects */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:-8px 0 24px}
+.filter{font:inherit;font-size:14px;font-weight:600;padding:7px 14px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--muted);cursor:pointer}
+.filter[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .filter[aria-pressed="true"]{color:#062033}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .filter[aria-pressed="true"]{color:#062033}}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project{padding:22px;display:flex;flex-direction:column;transition:transform .15s ease,border-color .15s ease}
+.project:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--accent) 45%,var(--border))}
+.project .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.project .badge{font-size:12px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--accent)}
+.project h3{margin:0 0 8px;font-size:1.08rem}
+.project p{color:var(--muted);font-size:14.5px;margin:0 0 16px;flex:1}
+.project .tags{margin:0 0 16px}
+.project .tag{font-size:12px;font-weight:600}
+.project a.code{display:inline-flex;align-items:center;gap:6px;font-weight:600;font-size:14.5px}
+.project a.code svg{width:16px;height:16px}
+.project[hidden]{display:none}
+@media (max-width:900px){.projects{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.projects{grid-template-columns:1fr}}
+
+/* Education */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.edu{padding:22px}
+.edu h3{margin:0 0 4px;font-size:1.05rem}
+.edu .meta{color:var(--muted);font-size:14.5px;margin:0 0 10px}
+.edu ul{margin:0;padding-left:18px;color:var(--text);font-size:14.5px}
+.edu li{margin:3px 0}
+@media (max-width:700px){.edu-grid{grid-template-columns:1fr}}
+
+/* Contact */
+.contact{padding:36px;text-align:center;background:linear-gradient(135deg,var(--hero-1),var(--hero-2));color:#fff;border:none}
+.contact h2{margin:0 0 8px;font-size:clamp(1.5rem,3vw,2rem)}
+.contact p{color:var(--hero-muted);margin:0 auto 22px;max-width:52ch}
+.contact .cta{justify-content:center}
+
+footer{padding:28px 0 36px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* Motion */
+body,.card,.nav ul a,.filter,.tag{transition:background-color .35s ease,color .35s ease,border-color .35s ease}
+.btn{transition:transform .2s ease,background-color .2s ease,box-shadow .2s ease}
+.btn-primary:hover{box-shadow:0 8px 24px rgba(64,200,224,.35)}
+.project{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease,background-color .35s ease}
+.project:hover{box-shadow:0 12px 32px rgba(14,116,144,.18)}
+.project a.code svg{transition:transform .2s ease}
+.project:hover a.code svg{transform:translate(2px,-2px)}
+.skill,.edu,.tl{transition:transform .25s ease,box-shadow .25s ease,background-color .35s ease}
+.skill:hover,.edu:hover{transform:translateY(-2px)}
+.js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.hero .wrap>div>*{animation:fadeUp .8s cubic-bezier(.2,.7,.2,1) both}
+.hero .wrap>div>*:nth-child(2){animation-delay:.08s}
+.hero .wrap>div>*:nth-child(3){animation-delay:.16s}
+.hero .wrap>div>*:nth-child(4){animation-delay:.24s}
+.hero .wrap>div>*:nth-child(5){animation-delay:.32s}
+.hero-card{animation:fadeUp .9s .4s cubic-bezier(.2,.7,.2,1) both}
+@keyframes draw{to{stroke-dashoffset:0}}
+.net line{stroke-dasharray:260;stroke-dashoffset:260;animation:draw 2.4s .2s ease forwards}
+@keyframes pulse{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.35)}}
+.net circle{transform-box:fill-box;transform-origin:center;animation:pulse 4s ease-in-out infinite}
+.net circle:nth-child(2n){animation-delay:1.3s}.net circle:nth-child(3n){animation-delay:2.6s}
+@keyframes caret{50%{opacity:0}}
+.hero-card .cursor{display:inline-block;width:8px;height:15px;background:#40c8e0;vertical-align:-2px;margin-left:2px;animation:caret 1.1s steps(1) infinite}
+@media (prefers-reduced-motion: reduce){.js .reveal{opacity:1;transform:none}.net line{stroke-dashoffset:0}}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.27 5.69.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12l7 7 7-7"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></g></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 9 12 4 2 9l10 5 10-5Z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/></g></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></g></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></g></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Hussein Fouani, home"><span class="mono" aria-hidden="true">HF</span><span>Hussein Fouani</span></a>
+    <nav aria-label="Primary">
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme" type="button" aria-label="Toggle dark mode"><svg><use href="#i-moon"/></svg></button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <svg class="net" viewBox="0 0 520 420" aria-hidden="true">
+      <g stroke="#40c8e0" stroke-width="1" opacity=".55">
+        <line x1="60" y1="80" x2="190" y2="40"/><line x1="190" y1="40" x2="330" y2="110"/><line x1="330" y1="110" x2="460" y2="60"/>
+        <line x1="60" y1="80" x2="140" y2="210"/><line x1="140" y1="210" x2="300" y2="240"/><line x1="300" y1="240" x2="330" y2="110"/>
+        <line x1="300" y1="240" x2="450" y2="300"/><line x1="140" y1="210" x2="210" y2="350"/><line x1="210" y1="350" x2="450" y2="300"/><line x1="460" y1="60" x2="450" y2="300"/>
+      </g>
+      <g fill="#40c8e0"><circle cx="60" cy="80" r="5"/><circle cx="190" cy="40" r="4"/><circle cx="330" cy="110" r="6"/><circle cx="460" cy="60" r="4"/><circle cx="140" cy="210" r="5"/><circle cx="300" cy="240" r="6"/><circle cx="450" cy="300" r="4"/><circle cx="210" cy="350" r="5"/></g>
+    </svg>
+    <div class="wrap">
+      <div>
+        <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Software Developer at Synapse · Beirut, Lebanon</span>
+        <h1>Hussein Fouani</h1>
+        <p class="role">.NET Backend Developer · Expanding into AI/ML</p>
+        <p class="lead">I build backend services for a Hospital Information System with C#, ASP.NET Core and SQL Server. Now I'm learning to bring AI and machine learning into production-ready systems.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#projects">View projects <svg><use href="#i-down"/></svg></a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/hussein-fouani" target="_blank" rel="noopener"><svg><use href="#i-in"/></svg>LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Hussein-Fouani" target="_blank" rel="noopener"><svg><use href="#i-gh"/></svg>GitHub</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-hidden="true">
+        <div><span class="c">// what I work with</span></div>
+        <div><span class="k">var</span> stack = <span class="k">new</span>[] {</div>
+        <div>&nbsp;&nbsp;<span class="s">"C#"</span>, <span class="s">"ASP.NET Core"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="s">"SQL Server"</span>, <span class="s">"REST APIs"</span>,</div>
+        <div>&nbsp;&nbsp;<span class="s">"Clean Architecture"</span></div>
+        <div>};</div>
+        <div><span class="c">// currently learning</span></div>
+        <div><span class="k">var</span> next = <span class="s">"Python → ML → LLMs"</span>;<span class="cursor"></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="sec-head"><div class="kicker">About</div><h2>Backend engineer, growing into AI</h2></div>
+      <div class="about-grid">
+        <div>
+          <p>I'm a .NET backend developer at <strong>Synapse</strong>, where I work on a Hospital Information System (HIS). My day-to-day is backend business logic, REST API design, relational databases and keeping the codebase clean and maintainable for healthcare workflows.</p>
+          <p>Before that, I built projects across the stack: ASP.NET Core APIs, WPF desktop apps, Java and Spring Boot services, and Angular and React front ends.</p>
+          <p>I'm now expanding into <strong>AI and machine learning engineering</strong>. I'm studying Python, pandas, scikit-learn and, next, LLMs and RAG, with a focus on building AI-powered systems on solid software engineering foundations.</p>
+        </div>
+        <div class="card facts">
+          <div class="fact"><svg><use href="#i-brief"/></svg><div><b>Software Developer, Synapse</b><span>May 2024 – Present</span></div></div>
+          <div class="fact"><svg><use href="#i-cap"/></svg><div><b>BSc Computer Science</b><span>Lebanese International University</span></div></div>
+          <div class="fact"><svg><use href="#i-pin"/></svg><div><b>Beirut, Lebanon</b><span>Local time UTC+3</span></div></div>
+          <div class="fact"><svg><use href="#i-spark"/></svg><div><b>Learning focus</b><span>Python, ML, LLMs and RAG</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="experience">
+    <div class="wrap">
+      <div class="sec-head"><div class="kicker">Experience</div><h2>Where I work</h2></div>
+      <div class="timeline">
+        <article class="card tl">
+          <div class="tl-logo" aria-hidden="true">S</div>
+          <div>
+            <h3>Software Developer · Synapse</h3>
+            <div class="meta">May 2024 – Present · Hospital Information System (HIS)</div>
+            <ul>
+              <li>Develop and maintain backend features of a Hospital Information System using C#, ASP.NET Core Web API and SQL Server.</li>
+              <li>Design REST APIs and business logic that support healthcare workflows.</li>
+              <li>Apply Clean Architecture principles to keep the codebase maintainable.</li>
+            </ul>
+            <ul class="tags" aria-label="Technologies"><li class="tag">C#</li><li class="tag">ASP.NET Core</li><li class="tag">SQL Server</li><li class="tag">REST APIs</li><li class="tag">Clean Architecture</li></ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="skills">
+    <div class="wrap">
+      <div class="sec-head"><div class="kicker">Skills</div><h2>What I bring</h2><p>Separated honestly: what I use professionally, what I've built projects with, and what I'm learning now.</p></div>
+      <div class="skills">
+        <div class="card skill">
+          <h3><svg><use href="#i-server"/></svg>Backend (professional)</h3>
+          <p>Used daily on production healthcare software.</p>
+          <ul class="tags"><li class="tag">C#</li><li class="tag">ASP.NET Core Web API</li><li class="tag">Entity Framework</li><li class="tag">SQL Server</li><li class="tag">REST APIs</li><li class="tag">Clean Architecture</li></ul>
+        </div>
+        <div class="card skill">
+          <h3><svg><use href="#i-layers"/></svg>Also built with</h3>
+          <p>Used in personal and academic projects.</p>
+          <ul class="tags"><li class="tag">Java</li><li class="tag">Spring Boot</li><li class="tag">Angular</li><li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">WPF</li><li class="tag">Git</li></ul>
+        </div>
+        <div class="card skill">
+          <h3><svg><use href="#i-spark"/></svg>Currently learning</h3>
+          <p>Python (7 DataCamp courses completed), with ML next.</p>
+          <ul class="tags"><li class="tag">Python</li><li class="tag learning">pandas</li><li class="tag learning">scikit-learn</li><li class="tag learning">PyTorch</li><li class="tag learning">LLMs &amp; RAG</li><li class="tag learning">MLOps</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block alt" id="projects">
+    <div class="wrap">
+      <div class="sec-head"><div class="kicker">Projects</div><h2>Selected work</h2><p>Code for every project is on GitHub.</p></div>
+      <div class="filters" role="group" aria-label="Filter projects">
+        <button class="filter" type="button" data-f="all" aria-pressed="true">All</button>
+        <button class="filter" type="button" data-f="net" aria-pressed="false">.NET</button>
+        <button class="filter" type="button" data-f="java" aria-pressed="false">Java</button>
+      </div>
+      <div class="projects">
+        <article class="card project" data-cat="net">
+          <div class="top"><span class="badge">.NET · API</span></div>
+          <h3>NZ Walks API</h3>
+          <p>RESTful Web API built with ASP.NET Core that serves New Zealand regions and walking routes.</p>
+          <ul class="tags"><li class="tag">ASP.NET Core</li><li class="tag">C#</li><li class="tag">REST</li></ul>
+          <a class="code" href="https://github.com/Hussein-Fouani/NZWALKSAPP" target="_blank" rel="noopener">View code <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card project" data-cat="net">
+          <div class="top"><span class="badge">.NET · Angular</span></div>
+          <h3>Identity &amp; User Management</h3>
+          <p>Web project built with .NET and Angular demonstrating the core concepts of identity and user management.</p>
+          <ul class="tags"><li class="tag">.NET</li><li class="tag">Angular</li><li class="tag">TypeScript</li></ul>
+          <a class="code" href="https://github.com/Hussein-Fouani/IdentityApi" target="_blank" rel="noopener">View code <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card project" data-cat="net">
+          <div class="top"><span class="badge">.NET</span></div>
+          <h3>Beirut Street Walks</h3>
+          <p>App that lets users track walks around Beirut and interact with them by uploading photos and adding related details.</p>
+          <ul class="tags"><li class="tag">C#</li><li class="tag">.NET</li></ul>
+          <a class="code" href="https://github.com/Hussein-Fouani/BeirutStreetWalksApp" target="_blank" rel="noopener">View code <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card project" data-cat="net">
+          <div class="top"><span class="badge">.NET · Desktop</span></div>
+          <h3>E-Library Management System</h3>
+          <p>Lets users search for, borrow and examine books, and view book details alongside their profile.</p>
+          <ul class="tags"><li class="tag">C#</li><li class="tag">REST API</li><li class="tag">WPF</li></ul>
+          <a class="code" href="https://github.com/Hussein-Fouani/E_LibraryManagementSystemApp" target="_blank" rel="noopener">View code <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card project" data-cat="net">
+          <div class="top"><span class="badge">.NET · Desktop</span></div>
+          <h3>WPF Stock Trader</h3>
+          <p>Stock trading application using Entity Framework, WPF and the MVVM pattern, integrated with real-time stock data APIs.</p>
+          <ul class="tags"><li class="tag">C#</li><li class="tag">Entity Framework</li><li class="tag">WPF</li><li class="tag">MVVM</li></ul>
+          <a class="code" href="https://github.com/Hussein-Fouani/Full-Stack-WPF-Trader" target="_blank" rel="noopener">View code <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card project" data-cat="java">
+          <div class="top"><span class="badge">Java · API</span></div>
+          <h3>Blog REST API</h3>
+          <p>Blog application API using Spring Boot, Spring Security with JWT, Spring Data JPA (Hibernate) and MySQL, documented with Swagger.</p>
+          <ul class="tags"><li class="tag">Spring Boot</li><li class="tag">JWT</li><li class="tag">MySQL</li></ul>
+          <a class="code" href="https://github.com/Hussein-Fouani/springboot-blog-rest-api" target="_blank" rel="noopener">View code <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card project" data-cat="java">
+          <div class="top"><span class="badge">Java · Real-time</span></div>
+          <h3>Real-time Chat</h3>
+          <p>Real-time chat application using WebSockets, with a Spring Boot back end and an HTML, CSS and JavaScript front end.</p>
+          <ul class="tags"><li class="tag">Spring Boot</li><li class="tag">WebSockets</li></ul>
+          <a class="code" href="https://github.com/Hussein-Fouani/Chat_Application" target="_blank" rel="noopener">View code <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card project" data-cat="java">
+          <div class="top"><span class="badge">Java · Web</span></div>
+          <h3>Runners &amp; Events</h3>
+          <p>CRUD web application built with Spring Boot and Thymeleaf to manage runners, events and their details.</p>
+          <ul class="tags"><li class="tag">Spring Boot</li><li class="tag">Thymeleaf</li></ul>
+          <a class="code" href="https://github.com/Hussein-Fouani/Running_Application" target="_blank" rel="noopener">View code <svg><use href="#i-arrow"/></svg></a>
+        </article>
+        <article class="card project" data-cat="other">
+          <div class="top"><span class="badge">Capstone</span></div>
+          <h3>LIU Community Portal</h3>
+          <p>Senior project: a community portal restricted to LIU students, with secure sign-up and login, built with PHP, MySQL and Bootstrap.</p>
+          <ul class="tags"><li class="tag">PHP</li><li class="tag">MySQL</li><li class="tag">JavaScript</li></ul>
+          <a class="code" href="https://github.com/Hussein-Fouani/Senior_Project_LIU_Community" target="_blank" rel="noopener">View code <svg><use href="#i-arrow"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="education">
+    <div class="wrap">
+      <div class="sec-head"><div class="kicker">Education</div><h2>Education &amp; learning</h2></div>
+      <div class="edu-grid">
+        <div class="card edu">
+          <h3>BSc in Computer Science</h3>
+          <div class="meta">Lebanese International University · Sep 2019 – Dec 2022</div>
+          <ul><li>Senior project: LIU Community Portal</li></ul>
+        </div>
+        <div class="card edu">
+          <h3>Selected courses &amp; certificates</h3>
+          <div class="meta">Coursera, DataCamp and others · 29 on LinkedIn</div>
+          <ul>
+            <li>Core Java; Spring Ecosystem and Core (Coursera, 2023)</li>
+            <li>7 Python courses, including Python for Developers and OOP in Python (DataCamp)</li>
+            <li>Algorithmic Toolbox; Git and GitHub (Coursera)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="card contact">
+        <h2>Let's talk</h2>
+        <p>The best way to reach me is a message on LinkedIn. You'll find all my code on GitHub.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/hussein-fouani" target="_blank" rel="noopener"><svg><use href="#i-in"/></svg>Message me on LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Hussein-Fouani" target="_blank" rel="noopener"><svg><use href="#i-gh"/></svg>GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Hussein Fouani</span>
+    <span>Beirut, Lebanon</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement, themeBtn=document.getElementById('theme');
+  function isDark(){var t=root.getAttribute('data-theme');return t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;}
+  function syncIcon(){themeBtn.innerHTML='<svg><use href="#'+(isDark()?'i-sun':'i-moon')+'"/></svg>';themeBtn.setAttribute('aria-label',isDark()?'Switch to light mode':'Switch to dark mode');}
+  syncIcon();
+  themeBtn.addEventListener('click',function(){var n=isDark()?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n);}catch(e){}syncIcon();});
+
+  var menu=document.getElementById('menu'), mb=document.getElementById('menuBtn');
+  mb.addEventListener('click',function(){var o=menu.classList.toggle('open');mb.setAttribute('aria-expanded',o);});
+  menu.addEventListener('click',function(e){if(e.target.tagName==='A'){menu.classList.remove('open');mb.setAttribute('aria-expanded','false');}});
+
+  var btns=document.querySelectorAll('.filter'), cards=document.querySelectorAll('.project');
+  btns.forEach(function(b){b.addEventListener('click',function(){
+    btns.forEach(function(x){x.setAttribute('aria-pressed',x===b);});
+    var f=b.getAttribute('data-f');
+    cards.forEach(function(c){c.hidden=!(f==='all'||c.getAttribute('data-cat')===f);});
+  });});
+
+  var links=[].slice.call(document.querySelectorAll('.nav ul a'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){links.forEach(function(l){l.classList.toggle('active',l.getAttribute('href')==='#'+en.target.id);});}});},{rootMargin:'-45% 0px -50% 0px'});
+    ['about','experience','skills','projects','contact'].forEach(function(id){var s=document.getElementById(id);if(s)io.observe(s);});
+  }
+
+  var rv=document.querySelectorAll('.sec-head, .about-grid > *, .tl, .skill, .filters, .project, .edu, .contact');
+  if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    rv.forEach(function(el){el.classList.add('reveal');
+      var sib=el.parentElement?[].slice.call(el.parentElement.children).filter(function(c){return c.matches('.project,.skill,.edu,.about-grid > *')}):[];
+      var i=sib.indexOf(el); if(i>0) el.style.transitionDelay=Math.min(i*70,420)+'ms';
+    });
+    var ro=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');ro.unobserve(en.target);}});},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    rv.forEach(function(el){ro.observe(el);});
+  }
+  btns.forEach(function(b){b.addEventListener('click',function(){cards.forEach(function(c){if(!c.hidden){c.classList.add('in');c.style.transitionDelay='0ms';c.animate&&c.animate([{opacity:0,transform:'translateY(10px)'},{opacity:1,transform:'none'}],{duration:350,easing:'ease-out'});}});});});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
