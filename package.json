@@ -1,15 +1,11 @@
 {
   "name": "educator-js-codespace-template",
   "version": "1.0.0",
-  "description": "Educator JS Codespace Template",
-  "source": "src/index.html",
+  "description": "Portfolio website of Hussein Fouani",
   "homepage": "https://Hussein-Fouani.github.io/Portfolio",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://Hussein-Fouani.github.io/Portfolio'",
-    "predeploy": "npm run build-gh",
-    "deploy": "gh-pages -d dist"
+    "start": "npx serve site",
+    "deploy": "gh-pages -d site"
   },
   "repository": {
     "type": "git",
